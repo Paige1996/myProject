@@ -13,7 +13,7 @@ import com.myProject.vo.Board;
 
 @WebServlet("*.do")
 public class Controller extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L; // test
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doPost(request, response);
