@@ -23,4 +23,9 @@ public class UserService {
 	public ArrayList<Board> getUsers() {
 		return dao.getUsers();
 	}
+
+	public void insertUser(Board board) {
+		dao.insertUser(board);
+		
+	}
 }

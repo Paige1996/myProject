@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Submit result</title>
+<title>저장 완료 </title>
 </head>
 <body>
-<h1>Successfully saved!</h1>
-<!--  나중에 주소 넣기 <a href="">돌아가기</a> -->
+<h1>저장 완료!</h1>
+<a href="/myProject/baord-list.do">게시판 목록 보기</a>
 </body>
 </html>

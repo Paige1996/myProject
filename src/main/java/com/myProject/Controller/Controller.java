@@ -26,21 +26,32 @@ public class Controller extends HttpServlet {
 		String contextPath = request.getContextPath();
 		String command = requestURI.substring(contextPath.length());
 		String view = null;
+		UserService userService = null;
 		
 		response.setContentType("text/html; charset=utf-8");
 		request.setCharacterEncoding("utf-8");
 		
 		switch (command) {
-		case "/user-insert.do":
-			view ="user/startNewBoard";
-			break;
-		case "/insert-reuslt":
+		case  "/board-list.do":
+			userService = UserService.getInstance();
+			ArrayList<Board> list = userService.getUsers();
+			view = "board/list";
+			request.setAttribute("list", list);
+			break; 
+
+		case "/board-insert.do":
+			view ="board/startNewBoard";
+			break; 
+			
+		case "/board-insert-process.do":
 			Board board = new Board();
+			board.setB_title(request.getParameter("b_title"));
+			board.setB_content(request.getParameter("b_content"));
 			
-   	       	view = "user/startNewBoard-result";
+			userService = UserService.getInstance();
+			userService.insertUser(board);
+   	       	view = "board/startNewBoard-result";
    	       	break;
-			
-			
 		}
 		
 		RequestDispatcher rd = request.getRequestDispatcher(view+".jsp");
