@@ -1,5 +1,8 @@
 package com.myProject.service;
 import java.util.ArrayList;
+
+import org.apache.catalina.User;
+
 import com.myProject.dao.BoardDAO;
 import com.myProject.vo.Board;
 
@@ -24,8 +27,9 @@ public class UserService {
 		return dao.getUsers();
 	}
 
-	public void insertUser(Board board) {
-		dao.insertUser(board);
+	public void insertBoard(Board board) {
+		dao.insertBoard(board);
 		
 	}
+
 }

@@ -29,15 +29,18 @@
 <h1>게시판 목록</h1>
 	<table >
 		<tr>
-		<th>No</th>
+			<th>No</th>
 			<th>제목</th>
 			<th>내용</th>
 		</tr>
 		<c:forEach items="${list}" var="item">
 			 <tr>
-			 <td>${item.b_idx}</td>
+			 	<td>${item.b_idx}</td>
 				<td>${item.b_title}</td>
-				<td>${item.b_content}</td>
+				<td>${item.b_date}</td>
+				<td>${item.b_writer}</td>
+				<td>${item.b_view}</td>
+				<td>${item.u_idx}</td>
 		     <tr>
 		</c:forEach>
 	</table>

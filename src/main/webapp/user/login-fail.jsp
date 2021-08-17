@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>저장 완료 </title>
+<title>로그인 실패</title>
 </head>
 <body>
-<h1>저장 완료!</h1>
-<a href="/myProject/board-list.do">게시판 목록 보기</a>
+<h1>로그인 실패</h1>
 </body>
 </html>

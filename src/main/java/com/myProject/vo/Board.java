@@ -5,17 +5,17 @@ public class Board {
 	private int b_idx;
 	private String b_title;
 	private String b_content;
-	private int b_date;
+	private String b_date;
 	private String b_writer;
-	private int b_view;
+	private String b_view;
 	private int u_idx;
 	
 	
 	public int getB_idx() {
 		return b_idx;
 	}
-	public void setB_idx(int b_idx) {
-		this.b_idx = b_idx;
+	public void setB_idx(int string) {
+		this.b_idx = string;
 	}
 	
 	
@@ -35,10 +35,10 @@ public class Board {
 	}
 	
 	
-	public int getB_date() {
+	public String getB_date() {
 		return b_date;
 	}
-	public void setb_date(int b_date) {
+	public void setB_date(String b_date) {
 		this.b_date = b_date;
 	}
 	
@@ -52,17 +52,18 @@ public class Board {
 	}
 	
 	
-	public int getB_view() {
+	public String getB_view() {
 		return b_view;
 	}
-	public void setB_view(int b_view) {
+	public void setB_view(String b_view) {
 		this.b_view = b_view;
 	}
 	
 	public int getU_idx() {
-		return b_view;
+		return u_idx;
 	}
 	public void setU_idx(int u_idx) {
 		this.u_idx = u_idx;
 	}
+
 }

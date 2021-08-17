@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>저장 완료 </title>
+<title>로그인중입니다.</title>
 </head>
 <body>
-<h1>저장 완료!</h1>
-<a href="/myProject/board-list.do">게시판 목록 보기</a>
+<h1>${sessionScope.user.u_name }님 로그인 성공</h1>
 </body>
 </html>
