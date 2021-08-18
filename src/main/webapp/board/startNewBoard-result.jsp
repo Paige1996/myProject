@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>저장 완료!</h1>
-<a href="/myProject/board-list.do">게시판 목록 보기</a>
+<a href="/lcomputestudy/board-list.do">게시판 목록 보기</a>
 </body>
 </html>

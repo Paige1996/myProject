@@ -49,6 +49,7 @@ public class Controller extends HttpServlet {
 		case "/board-insert.do":
 			view ="board/startNewBoard";
 			break; 
+			
 		case "/board-insert-process.do":
 			//session = request.getSession();
 			Board board = new Board();
